@@ -1,0 +1,4 @@
+This is an example Netbeans Project to reproduce the bug explained below.
+
+== Bug ==
+If the parse db.parse function in the method "theProblemCode()" in the DerivedEntity exists, then the attributes of the BaseEntity are not loaded. As soon as that line of code is removed, all attributes are loaded by the EntityManager as expected.
